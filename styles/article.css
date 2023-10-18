@@ -13,7 +13,7 @@ main {
     background-image: url("../images/article-fv1.png");
     background-position: center;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
 }
 .a2 {
     background-image: url("../images/article-fv2.png");
@@ -21,7 +21,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
 }
 .a3 {
     background-image: url("../images/article-fv3.png");
@@ -29,15 +29,15 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
 }
 .a4 {
     background-image: url("../images/article-fv4.png");
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
 }
 .a5 {
     background-image: url("../images/article-fv5.png");
@@ -45,7 +45,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
 }
 .articles {
     width: 80%;
