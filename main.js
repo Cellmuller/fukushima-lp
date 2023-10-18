@@ -12,7 +12,7 @@ function slideFromSide(selector, distance, duration) {
   new ScrollMagic.Scene({
     triggerElement: selector,
     triggerHook: 0.8, // corresponds to "top 80%"
-    reverse: true // to ensure the animation plays in reverse when scrolling up
+    reverse: false // to ensure the animation plays in reverse when scrolling up
   })
   .setTween(tween)
   .addTo(controller);
@@ -31,7 +31,7 @@ function fadeInFromBelow(selector, duration, delayMultiplier) {
     new ScrollMagic.Scene({
       triggerElement: element,
       triggerHook: 0.8, // corresponds to "top 80%"
-      reverse: true // to ensure the animation plays in reverse when scrolling up
+      reverse: false // to ensure the animation plays in reverse when scrolling up
     })
     .setTween(tween)
     .addTo(controller);

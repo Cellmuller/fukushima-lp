@@ -452,6 +452,9 @@ footer .sns a img {
     body > main > div > section.overview-area > div.overview-detail > div > div > div:nth-child(5) > h3 span {
         color: #f49659;
     }
+    .overview-detail > h3 {
+        width: 100%;
+    }
     .ovewview-img div p {
         width: 100%;
         max-width: 290px;
