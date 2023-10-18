@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-style: italic; */
+    color: #666666;
+}
+main {
+    background: linear-gradient(to right, #ebfafc, #fff8de);
+    z-index: 0;
+}
+
+.fv-area {
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* 動画を前面に表示 */
+    height: 100vh;
+}
+
+.fv-area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    /* background: rgba(0, 0, 0, 0.308); */
+    background: linear-gradient(to right, #00000070, #ffffff00);
+}
+
+.fv-area video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.fv-area h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    z-index: 1;
+}
+
+header {
+    color: #fff;
+    padding: 40px 50px;
+    position: relative;
+    z-index: 1;
+}
+
+header b {
+    font-style: italic;
+    font-size: 25px;
+    color: #fff;
+}
+
+.about-area, .overview-area, .product-area, .mail-area {
+    width: 85%;
+    margin: 100px auto;
+}
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+h3 {
+    font-size: 18px;
+    font-weight: lighter;
+}
+p {
+    font-size: 15px;
+}
+.sp {
+    display: none;
+}
+.border-area {
+    position: relative;
+    height: 200px;
+}
+.border, .border-rv {
+    position: absolute;
+    width: 90%;
+    margin: 40px 0;
+}
+.border {
+    left: 0;
+}
+.border-rv {
+    right: 0;
+}
+.about-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-detail div {
+    text-align: center;
+    width: 50%;
+}
+.about-detail div h2 {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.about-detail img {
+    width: 50%;
+}
+.about-detail div h2::after {
+    content: "";
+    background-image: url('./images/decoration.png'); 
+    display: block;
+    background-size: cover;  
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+}
+.about-detail div p {
+    width: 50%;
+    margin: auto;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+.overview-area {
+    text-align: center;
+}
+.overview-explain {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.overview-detail {
+    margin: 40px 0;
+}
+.overview-detail h2, .experience h2, .product-area h2, .mail-area h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.overview-detail h2::after, .experience h2::after, .product-area h2::after, .mail-area h2::after {
+    content: "";
+    background-image: url('./images/decoration.png'); 
+    display: block;
+    background-size: cover;  
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+}
+.overview-detail h3 {
+    text-align: left;
+    width: 70%;
+    margin: 20px auto 40px;
+}
+.ovewview-img div {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-around;
+
+}
+.ovewview-img div:nth-child(2) {
+    margin: 20px 0;
+}
+.ovewview-img div p {
+    width: 50%;
+    text-align: left;
+}
+.overview-detail > div > div > div:nth-child(3) > p {
+    color: #06adec;
+}
+.overview-detail > div > div > div:nth-child(4) > p {
+    color: #8fc31f;
+}
+.overview-detail > div > div > div:nth-child(5) > p {
+    color: #f4975b;
+}
+.experience h2 {
+    margin-bottom: 40px;
+}
+.know-detail {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.know-detail > a {
+    width: 17%;
+    text-decoration: none;
+    height: auto;
+    box-shadow: 0px 4px 6px rgb(172 170 170 / 22%);
+    border-radius: 25px;
+    background-color: #fff;
+}
+.know-detail > a:hover {
+    transition: box-shadow 0.5s ease;
+    box-shadow: 0px 10px 12px rgb(172 170 170 / 50%);
+}
+.know-detail > a  > div {
+    background-color: #fff;
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+}
+.know-detail > a  > div > img {
+    width: 100%;
+}
+.know-explain {
+    padding: 30px;
+}
+.know-explain h3 {
+    margin-bottom: 20px;
+}
+.product-area h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.product-detail {
+    background-color: #fff;
+}
+.product-list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-list a {
+    width: 30%;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgb(172 170 170 / 22%);
+}
+.product-list a:nth-child(1), .product-list a:nth-child(2), .product-list a:nth-child(3) {
+    margin-bottom: 40px;
+}
+.product-list a:hover {
+    transition: box-shadow 0.5s ease;
+    box-shadow: 0px 10px 12px rgb(172 170 170 / 50%);
+}
+.product-list a div {
+    border-radius: 5px;
+}
+.product-list a div img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+
+}
+.product-detail > div {
+    padding: 30px;
+}
+.product-detail > div > p {
+    display: flex;
+    position: relative;
+  }
+  
+  .product-detail > div > p::after {
+    content: "";
+    background-image: url('./images/arrow.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute; 
+    bottom: -10px;
+    right: 0;
+  }
+.mail-area {
+    text-align: center;
+    margin:30px auto;
+}
+.mail-area p {
+    width: 25%;
+    margin: 10px auto 30px;
+}
+.mail-area > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: auto;
+}
+.mail-area input {
+    border: none;
+    width: 20%;
+    padding: 10px;
+}
+.mail-area input::placeholder {
+    text-align: center;
+}
+
+.mail-area > div > a > img {
+    width: 65%;
+}
+footer {
+    border-top: 1px solid #e1e1e0;
+}
+footer .sns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin: 50px auto 0;
+}
+footer .sns p {
+    font-size: 9px;
+}
+body > main > footer > div.sns > a:nth-child(2) {
+    margin-left: 20px;
+}
+body > main > footer > div.sns > a:nth-child(3), body > main > footer > div.sns > a:nth-child(4) {
+    margin-left: 40px;
+}
+footer .sns a {
+    
+    width: 10%;
+}
+footer .sns a img {
+    width: 100%;
+}
+.youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.youtube p {
+    font-weight: bold;
+    color: #787878;
+}
+.youtube p b {
+    color: #1e1e1d;
+}
+.youtube img {
+    margin-left: 30px;
+}
+.address {
+    text-align: center;
+}
+.address > p {
+    margin: 40px 0;
+}
+.address > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.address > div > p > b {
+    margin-right: 30px;
+}
+.address > div > a {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.address > div > a > img {
+    margin-right: 5px;
+}
+@media screen and (max-width:1409px) {
+    .know-detail > a {
+        width: 40%;
+        margin-top: 20px;
+    }
+    body > main > div > section.overview-area > div.overview-detail > div > img {
+        margin: 30px 0;
+    }
+    body > main > div > section.about-area > div:nth-child(1) > div {
+        margin-right: 20px;
+    }
+    body > main > div > section.about-area > div.about-detail.reverse > div {
+        margin-left: 20px;
+    }
+    .about-detail div p {
+        width: 100%;
+    }
+}
+@media screen and (max-width:1023px) {
+    
+    header {
+        padding: 10px;
+    }
+    header b {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 25px;
+    }
+    p {
+        line-height: 30px;
+    }
+    .pc {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
+    .about-area, .overview-area, .product-area, .mail-area {
+        width: 90%;
+        margin: 50px auto 20px;
+    }
+    .border-area {
+        height: 100px;
+    }
+    .about-detail {
+        flex-direction: column;
+        margin-bottom: 75px;
+    }
+    .about-detail:last-child {
+        margin-bottom: 0;
+    }
+    .about-detail div {
+        width: 100%;
+        margin: 0;
+    }
+    .about-detail div p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-detail img {
+        width: 100%;
+    }
+    .overview-explain {
+        background-color: #fff;
+        border-radius: 35px;
+        padding: 65px 0;
+    }
+    .sp-img {
+        width: 90%;
+        margin: auto;
+    }
+    .ovewview-img div {
+        flex-direction: column;
+    }
+    body > main > div > section.overview-area > div.overview-detail > div > div > div:nth-child(3) > h3 span {
+        color: #00adec;
+    }
+    body > main > div > section.overview-area > div.overview-detail > div > div > div:nth-child(4) > h3 span {
+        color: #8fc31f;
+    }
+    body > main > div > section.overview-area > div.overview-detail > div > div > div:nth-child(5) > h3 span {
+        color: #f49659;
+    }
+    .ovewview-img div p {
+        width: 100%;
+        max-width: 290px;
+    }
+    .experience h2 {
+        margin-top: 60px;
+    }
+    .ov-exp {
+        color: #828282 !important;
+        font-weight: 100;
+    }
+    body > main > div > section.overview-area > div.overview-detail > div > img {
+        display: none;
+    }
+    .know-detail > a {
+        width: 100%;
+    }
+    .product-list a {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .product-list a:last-child {
+        margin-bottom: 0;
+    }
+    .mail-area p {
+        width: 100%;
+    }
+    .mail-area input {
+        width: 80%;
+    }
+    footer .sns {
+        width: 100%;
+    }
+    .address {
+        width: 90%;
+        margin: auto;
+    }
+    .address > div {
+        flex-direction: column;
+    }
+    .address > div p {
+        text-align: center;
+    }
+    .address > div > a {
+        margin-left: 0;
+    }
+    footer .sns a {
+        width: 4%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .fv-area {
+        min-height: 146.25vw; 
+        height: auto;
+    }
+    .fv-area video {
+        height: auto;
+        width: 100vw;
+        min-height: 146.25vw; 
+    }
+    .fv-area::before {
+        min-height: 146.25vw; 
+        height: auto;
+    }
+    h1 {
+        font-size: 45px !important;
+    }
+}
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 25px !important;
+    }
+}
