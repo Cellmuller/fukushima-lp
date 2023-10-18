@@ -26,7 +26,7 @@ function fadeInFromBelow(selector, duration, delayMultiplier) {
         trigger: element,
         start: "top 80%",
         end: "top 30%",
-        scrub: false,
+        scrub: true,
         markers: false,
       }
     });
