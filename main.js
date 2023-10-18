@@ -1,3 +1,4 @@
+
 gsap.registerPlugin(ScrollTrigger);
 
 // アニメーション設定を関数化
@@ -26,7 +27,7 @@ function fadeInFromBelow(selector, duration, delayMultiplier) {
         trigger: element,
         start: "top 80%",
         end: "top 30%",
-        scrub: true,
+        scrub: false,
         markers: false,
       }
     });
@@ -39,4 +40,4 @@ slideFromSide(".about-area .about-detail.reverse", -20, 2); // 左から右へ�
 
 // a要素ごとのアニメーション
 fadeInFromBelow(".know-detail a", 1, 0.1);
-fadeInFromBelow(".product-list a", 0.7, 0.2);
+fadeInFromBelow(".product-list a", 0.7, 0.1);
