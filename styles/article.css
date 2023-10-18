@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-style: italic; */
+    color: #666666;
+}
+main {
+    background: linear-gradient(to right, #ebfafc, #fff8de);
+    z-index: 0;
+}
+.fv-area img {
+    width: 100%;
+}
+.articles {
+    width: 80%;
+    margin: auto;
+}
+.article {
+    margin-top:  40px;
+}
+.article img {
+    width: 100%;
+}
+.articles p {
+    padding: 30px 0;
+}
