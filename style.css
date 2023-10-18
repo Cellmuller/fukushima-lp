@@ -66,7 +66,6 @@ header b {
 .about-area, .overview-area, .product-area, .mail-area {
     width: 85%;
     margin: 100px auto;
-    max-width: 445px;
 }
 h2 {
     font-size: 40px;
@@ -486,6 +485,7 @@ footer .sns a img {
     .about-area, .overview-area, .product-area, .mail-area {
         width: 90%;
         margin: 50px auto 20px;
+        max-width: 445px;
     }
     .border-area {
         height: 100px;
@@ -575,7 +575,8 @@ footer .sns a img {
         width: 80%;
     }
     footer .sns {
-        width: 100%;
+        width: 50%;
+        max-width: 4964px;
     }
     .address {
         width: 90%;
@@ -615,5 +616,8 @@ footer .sns a img {
 @media screen and (max-width: 450px) {
     h1 {
         font-size: 25px !important;
+    }
+    footer .sns {
+        width: 100%;
     }
 }
