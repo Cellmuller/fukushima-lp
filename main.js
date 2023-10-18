@@ -47,3 +47,7 @@ fadeInFromBelow(".product-list a", 0.7, 0.1);
 // aboutエリアアニメーション
 slideFromSide(".about-area .about-detail:not(.reverse)", 20, 2); // 右から左へのスライドイン
 slideFromSide(".about-area .about-detail.reverse", -20, 2); // 左から右へのスライドイン
+
+window.addEventListener('DOMContentLoaded' , function(){
+  let el = document.getElementById('video-background').click();
+})
