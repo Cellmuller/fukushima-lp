@@ -112,6 +112,7 @@ p {
 }
 .about-detail img {
     width: 50%;
+    border-radius: 120px;
 }
 .about-detail div h2::after {
     content: "";
@@ -214,6 +215,7 @@ p {
 }
 .know-detail > a  > div > img {
     width: 100%;
+    border-radius: 25px 25px 0 0;
 }
 .know-explain {
     padding: 30px;
@@ -430,6 +432,7 @@ footer .sns a img {
     }
     .about-detail img {
         width: 100%;
+        border-radius: 25px;
     }
     .overview-explain {
         background-color: #fff;
