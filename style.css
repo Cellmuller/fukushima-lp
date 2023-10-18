@@ -169,6 +169,7 @@ p {
     align-items: center;
     font-weight: bold;
     justify-content: space-around;
+    margin: 20px 0;
 
 }
 .ovewview-img div:nth-child(2) {
@@ -177,6 +178,78 @@ p {
 .ovewview-img div p {
     width: 50%;
     text-align: left;
+}
+.see {
+    background-color: #00adec;
+    color: #fff !important;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 35px;
+    width: 40% !important;
+    position: relative;
+}
+.see::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url("./images/eye.png");
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%); 
+}
+.listen {
+    background-color: #8fc31f;
+    color: #fff !important;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 35px;
+    width: 40% !important;
+    position: relative;
+}
+.listen::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url("./images/mimi.png");
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%); 
+}
+.brain {
+    background-color: #f4975b;
+    color: #fff !important;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 35px;
+    width: 40% !important;
+    position: relative;
+}
+.brain::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url("./images/brain.png");
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%); 
 }
 .overview-detail > div > div > div:nth-child(3) > p {
     color: #06adec;
@@ -441,6 +514,9 @@ footer .sns a img {
         padding: 65px 0;
         max-width: 445px;
         margin: auto;
+    }
+    .see, .listen, .brain {
+        width: 100% !important;
     }
     .sp-img {
         width: 90%;
