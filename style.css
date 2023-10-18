@@ -66,6 +66,7 @@ header b {
 .about-area, .overview-area, .product-area, .mail-area {
     width: 85%;
     margin: 100px auto;
+    max-width: 445px;
 }
 h2 {
     font-size: 40px;
