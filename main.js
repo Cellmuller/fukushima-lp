@@ -49,5 +49,5 @@ slideFromSide(".about-area .about-detail:not(.reverse)", 20, 2); // 右から左
 slideFromSide(".about-area .about-detail.reverse", -20, 2); // 左から右へのスライドイン
 
 window.addEventListener('DOMContentLoaded' , function(){
-  let el = document.getElementById('video-background').click();
+  document.getElementById('video-background').click();
 })
