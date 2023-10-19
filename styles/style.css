@@ -443,6 +443,55 @@ footer .sns a img {
 .address > div > a > img {
     margin-right: 5px;
 }
+
+
+iframe {
+    border: none;
+}
+/* ポップアップの基本スタイル */
+.popup {
+    display: none; /* 最初は非表示 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 95%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    transform: translate(-50%, -50%); 
+}
+
+.close-btn {
+    position: absolute;
+    top: -20px;        
+    right: -20px;       
+    cursor: pointer;
+    background-color: rgb(53, 53, 53); 
+    color: #ffffff;    
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px;
+    text-align: center;
+    font-weight: bold; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    line-height: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 @media screen and (max-width:1409px) {
     .know-detail > a {
         width: 40%;
@@ -611,6 +660,10 @@ footer .sns a img {
     } */
     h1 {
         font-size: 45px !important;
+    }
+    .popup-content {
+        width: 90%;
+        height: 80%;
     }
 }
 @media screen and (max-width: 450px) {

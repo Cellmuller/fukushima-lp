@@ -51,3 +51,33 @@ slideFromSide(".about-area .about-detail.reverse", -20, 2); // 左から右へ�
 window.addEventListener('DOMContentLoaded' , function(){
   document.getElementById('video-background').click();
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+  const popup = document.getElementById('popup');
+  const popupContent = document.getElementById('popup-content'); // 追加
+  const closeBtn = document.querySelector('.close-btn');
+  const popupIframe = document.getElementById('popup-iframe');
+  const boxes = document.querySelectorAll('.box');
+
+  boxes.forEach(function(box) {
+      box.addEventListener('click', function(event) {
+          event.preventDefault();
+          let articleURL = event.currentTarget.getAttribute('href');
+          popupIframe.src = articleURL; 
+          popup.style.display = 'block';
+      });
+  });
+
+  closeBtn.addEventListener('click', closePopup);
+
+  // popup-content の外側がクリックされた時のイベントハンドラを追加
+  popup.addEventListener('click', function(event) {
+      if (event.target === popup) {  // クリックされた要素が popup であればモーダルを閉じる
+          closePopup();
+      }
+  });
+
+  function closePopup() {
+      popup.style.display = 'none';
+  }
+});
