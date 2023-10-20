@@ -275,10 +275,27 @@
                     ホープツーリズム旅行パッケージは日々<br>更新されております。最新の宿情報を受取るには、
                     以下からメールアドレスでマガジンにご登録ください。
                 </p>
-                <div>
+                  <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd7OWjojazoED3mXjJJA8nyXceiWxLjaHCBvJ66QUSxPdp5VA/formResponse" method="POST"
+                    target="hidden_iframe"
+                    onsubmit="submitted=true;"
+                    class="c-form">
+                    <input type="email" class="whsOnd zHQkBf" jsname="YPqjbf" autocomplete="email" tabindex="0" aria-label="メールアドレス" required="" dir="auto" data-initial-dir="auto" data-initial-value="" name="entry.187268549" placeholder="メールアドレス">
+                    <input type="image" src="./images/mail-arrow.png" value="送信" class="send"/>
+                </form>
+
+                <!-- iframe with onload event to handle the form submission -->
+                <iframe
+                    name="hidden_iframe"
+                    id="hidden_iframe"
+                    style="display: none;"
+                    onload="if(submitted) { showThanksModal(); }"
+                ></iframe>
+
+
+                <!-- <div>
                     <input type="text" placeholder="メールアドレスを入力">
                     <a href="#"><img src="./images/mail-arrow.png" alt="mail-arrow"></a>
-                </div>
+                </div> -->
     
             </section>
         </div>
@@ -321,6 +338,20 @@
             <iframe id="popup-iframe" src="" width="100%" height="100%"></iframe>
         </div>
     </div>
+    <!-- モーダルのHTML -->
+<div id="thanksModal" class="modal">
+    <div class="modal-content">
+        <span class="thanks-close close-btn">&times;</span>
+        <div>
+            <h3>ご登録ありがとうございます。</h3>
+            <p>
+                随時更新情報をお送りさせていただきます。
+            </p>
+        </div>
+    </div>
+</div>
+
+
 
     <script src="./main.js"></script>
 </body>

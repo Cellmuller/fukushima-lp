@@ -81,3 +81,22 @@ document.addEventListener("DOMContentLoaded", function() {
       popup.style.display = 'none';
   }
 });
+
+
+function showThanksModal() {
+        var modal = document.getElementById('thanksModal');
+
+        modal.style.display = "block";
+
+        var closeBtn = document.querySelector(".thanks-close");
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+            console.log("modal");
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
