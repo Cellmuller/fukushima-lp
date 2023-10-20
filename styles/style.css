@@ -542,6 +542,32 @@ form {
     cursor: pointer;
     font-size: 24px;
 }
+#popup {
+    /* 他のスタイルを維持 */
+    display: none; 
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+#popup.show {
+    display: block;
+    opacity: 1;
+}
+
+#thanksModal {
+    /* 他のスタイルを維持 */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.3s, opacity 0.3s linear;
+}
+
+#thanksModal.show {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+
 
 
 @media screen and (max-width:1409px) {

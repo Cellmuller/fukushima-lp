@@ -52,9 +52,37 @@ window.addEventListener('DOMContentLoaded' , function(){
   document.getElementById('video-background').click();
 })
 
+// document.addEventListener("DOMContentLoaded", function() {
+//   const popup = document.getElementById('popup');
+//   const popupContent = document.getElementById('popup-content'); // 追加
+//   const closeBtn = document.querySelector('.close-btn');
+//   const popupIframe = document.getElementById('popup-iframe');
+//   const boxes = document.querySelectorAll('.box');
+
+//   boxes.forEach(function(box) {
+//       box.addEventListener('click', function(event) {
+//           event.preventDefault();
+//           let articleURL = event.currentTarget.getAttribute('href');
+//           popupIframe.src = articleURL; 
+//           popup.style.display = 'block';
+//       });
+//   });
+
+//   closeBtn.addEventListener('click', closePopup);
+
+//   // popup-content の外側がクリックされた時のイベントハンドラを追加
+//   popup.addEventListener('click', function(event) {
+//       if (event.target === popup) {  // クリックされた要素が popup であればモーダルを閉じる
+//           closePopup();
+//       }
+//   });
+
+//   function closePopup() {
+//       popup.style.display = 'none';
+//   }
+// });
 document.addEventListener("DOMContentLoaded", function() {
   const popup = document.getElementById('popup');
-  const popupContent = document.getElementById('popup-content'); // 追加
   const closeBtn = document.querySelector('.close-btn');
   const popupIframe = document.getElementById('popup-iframe');
   const boxes = document.querySelectorAll('.box');
@@ -64,39 +92,59 @@ document.addEventListener("DOMContentLoaded", function() {
           event.preventDefault();
           let articleURL = event.currentTarget.getAttribute('href');
           popupIframe.src = articleURL; 
-          popup.style.display = 'block';
+
+          // モーダルをフェードインさせるための処理
+          popup.style.display = 'block'; 
+          setTimeout(function() {
+              popup.classList.add('show');
+          }, 10); // 小さい遅延を入れてopacityのアニメーションをトリガー
       });
   });
 
   closeBtn.addEventListener('click', closePopup);
 
-  // popup-content の外側がクリックされた時のイベントハンドラを追加
   popup.addEventListener('click', function(event) {
-      if (event.target === popup) {  // クリックされた要素が popup であればモーダルを閉じる
+      if (event.target === popup) {
           closePopup();
       }
   });
 
   function closePopup() {
-      popup.style.display = 'none';
+      // モーダルをフェードアウトさせるための処理
+      popup.classList.remove('show');
+      setTimeout(function() {
+          popup.style.display = 'none';
+      }, 300); // 0.3sのトランジション時間と同じ
   }
 });
 
 
+
 function showThanksModal() {
-        var modal = document.getElementById('thanksModal');
+  var modal = document.getElementById('thanksModal');
 
-        modal.style.display = "block";
+  // クラスを追加してモーダルを表示
+  modal.style.display = "block"; // 最初に表示にする
+  setTimeout(function() {
+      modal.classList.add('show');
+  }, 10); // 小さい遅延を入れてopacityのアニメーションをトリガー
 
-        var closeBtn = document.querySelector(".thanks-close");
-        closeBtn.onclick = function() {
-            modal.style.display = "none";
-            console.log("modal");
-        }
+  var closeBtn = document.querySelector(".thanks-close");
+  closeBtn.onclick = function() {
+      // クラスを削除してモーダルのopacityを0に
+      modal.classList.remove('show');
+      // トランジション後に実際の非表示にする
+      setTimeout(function() {
+          modal.style.display = "none";
+      }, 300); // 0.3sのトランジション時間と同じ
+  }
 
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    }
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.classList.remove('show');
+          setTimeout(function() {
+              modal.style.display = "none";
+          }, 300); // 0.3sのトランジション時間と同じ
+      }
+  }
+}
