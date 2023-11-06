@@ -624,6 +624,9 @@ form {
     .border-area {
         height: 100px;
     }
+    .know-detail a {
+        min-height: 540px;
+    }
     .about-detail {
         flex-direction: column;
         margin-bottom: 75px;
