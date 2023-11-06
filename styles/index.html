@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+
+    <title>福島ホープツーリズム</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main>
+        <section class="fv-area">
+            <header>
+                <b>Hope Tourism ENJOY +</b>
+            </header>
+            <video loop autoplay muted playsinline id="video-background">
+                <source src="./images/sample.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>                
+            <h1>ふくしまの<br>
+                「見る」「聞く」「考える」<br>
+                を一緒に
+            </h1>
+        </section>
+        <section class="border-area">
+            <img src="./images/common-title-line-rv.png" class="border" alt="border-line">
+        </section>
+        <div class="container">
+            <section class="about-area">
+                <div class="about-detail">
+                    <div>
+                        <h2>今までにない<br>
+                            「学べる旅行」の新しい姿
+                        </h2>
+                        <p>
+                            福島県は、世界で類を見ない「複合災害（地震・津波・原子力災害）」を経験した唯一の場所。<br class="pc">
+                            複合災害の教訓等から「持続可能な社会・地域づくりを探究・創造する」福島オンリーワンの新しいスタディツアープログラム。それが「ホープツーリズム」です。
+                        </p>
+                    </div>
+                    <img src="./images/about-img1.png" alt="今までにない「学べる旅行」の新しい姿">
+                </div>
+                <div class="about-detail reverse">
+                    <div>
+                        <h2>見て・聞いて・考える「旅」</h2>
+                        <p>
+                            福島県には、魅力あふれるスポットがたくさん！特に、東日本大震災から10年以上が経過した浜通り地域には、美しい自然、伝統文化、グルメ、新たな産業、そして復興に向け果敢にチャレンジする人々との交流が待っています。ホープツーリズムでは、浜通り地域の「光と影」を正しく知り、心動かす体験ができます。福島の今を見て、聞いて、<br class="pc">福島の今の楽しみを＋(プラス)した、そんな旅行に出掛けてみませんか？
+                        </p>
+                    </div>
+                    <img src="./images/about-img2.png">
+                </div>
+            </section>
+            <section class="border-area">
+                <img src="./images/common-title-line-rv.png" class="border-rv">
+            </section>
+            <section class="overview-area">
+                <div class="overview-detail">
+                    <h2>ホープツーリズムとは</h2>
+                    <h3>
+                        福島県は、世界で類を見ない「複合災害（地震・津波・原子力災害）」を経験した唯一の場所。<br>
+                        複合災害の教訓等から「持続可能な社会・地域づくりを探究・創造する」福島オンリーワンの新しいスタディツアープログラムです。
+                    </h3>
+                    <div class="overview-explain">
+                        <div class="ovewview-img">
+                            <h2>学びのポイント</h2>
+                            <img src="./images/common-title-line-rv.png" class="sp-img sp" alt="学びのポイント">
+                            <div>
+                                <h3 class="sp">光も、影も。報道だけではわからない福島の<span>「今」</span>を</h3>
+                                <!-- <img src="./images/see.png" alt="施設見学、フィールドワークからありのままの姿を体感"> -->
+                                <p class="see">見る</p>
+                                <p>
+                                    施設見学、フィールドワークからありのままの姿を体感
+                                </p>
+                                <p class="sp ov-exp">
+                                    復興に向け確かに歩み出している地域、持続
+                                    可能な未来を担う新しい取組みが始まってい
+                                    ます。一方、長年の避難指示による地域への
+                                    影響を感じる街並み、避難指示が継続中の地
+                                    域……。報道だけでは伝わらない“光と影”。
+                                    その光景が「福島の今」です。
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="sp">復興に向け果敢にチャレンジする人々。福島の<span>「想い」</span>を</h3>
+                                <!-- <img src="./images/listen.png" alt="様々な立場・分野で復興に向け果敢にチャレンジする人々との“対話”"> -->
+                                <p class="listen">聞く</p>
+                                <p>
+                                    様々な立場・分野で復興に向け果敢にチャレンジする人々との“対話”
+                                </p>
+                                <p class="sp ov-exp">
+                                    困難の中で、それでもなお前へ進もうと挑戦
+                                    する人々が、たくさんいます。復興に向け果
+                                    敢にチャレンジする人々との対話から多くの
+                                    刺激や気づきを得ることができます。
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="sp">福島の問題を<span>「他人事」</span>から<span>「自分事」</span>へ</h3>
+                                <!-- <img src="./images/think.png" alt="震災･原発事故の教訓を未来(社会･地域･日常･自分自身)にどう活かすか"> -->
+                                <p class="brain">考える</p>
+                                <p>
+                                    震災･原発事故の教訓を未来(社会･地域･日常･自分自身)にどう活かすか
+                                </p>
+                                <p class="sp ov-exp">
+                                    まとめのワークショップでは、地震・津波・
+                                    原子力災害により顕在化した様々な社会課題
+                                    （人口減、高齢化、地域の衰退、エネルギー
+                                    問題等）は「福島だけの問題」ではなく「日
+                                    本社会や地域が抱え、解決すべき問題」であ
+                                    るという視点に立ち、自分たちがどのような
+                                    未来を創っていきたいかなどについて議論し
+                                    ます。
+                                </p>
+                            </div>
+                        </div>
+                        <img src="./images/about-lead.png">
+                    </div>
+                </div>
+                <div class="experience">
+                    <h2>ふくしまで出会う「学び」の新体験</h2>
+                    <div class="know-detail">
+                        <a href="./article/article5.html" class="box">
+                            <div>
+                                <img src="./images/overview-img1.png" alt="酒蔵を楽しむ">
+                                <div class="know-explain">
+                                    <h3>酒蔵を楽しむ</h3>
+                                    <p>
+                                        年間4万リットルを生産する鈴木酒造店。
+                                        かつて、2011年3月11日の津波で完全
+                                        に流されてしまいました。
+                                        しかしながらさまざまな奮闘の末、
+                                        10年ぶりに同地での操業を再開しました。 
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./article/article4.html" class="box">
+                            <div>
+                                <img src="./images/overview-img2.png" alt="福島の海の再生">
+                                <div class="know-explain">
+                                    <h3>福島の海の再生</h3>
+                                    <p>
+                                        「福島県の海」をテーマとしている、
+                                        「アクアマリンふくしま」。
+                                        関係者やボランティアたちの
+                                        懸命な努力によって、
+                                        東日本大震災の被害から復興しています。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./article/article3.html" class="box">
+                            <div>
+                                <img src="./images/overview-img3.png" alt="豊かな海の幸を楽しむ">
+                                <div class="know-explain">
+                                    <h3>豊かな海の幸を楽しむ</h3>
+                                    <p>
+                                        小名浜港1号埠頭地区に位置する、いわき市観光物産センター「いわき・ら・ら・ミュウ」。アクアマリンパークの中にあり、美しい海の景色を楽しみながら、この地の豊かな海産物を満喫できるスポットです。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./article/article2.html" class="box">
+                            <div>
+                                <img src="./images/overview-img4.png" alt="「遊び」とともに農業再生">
+                                <div class="know-explain">
+                                    <h3>「遊び」とともに農業再生</h3>
+                                    <p>
+                                        大野村農園は「相馬ミルキーエッグ」で知られています。
+                                        県外にも知られるようになったその
+                                        原動力は、アイデアとチャレンジ精神です。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./article/article1.html" class="box">
+                            <div>
+                                <img src="./images/overview-img5.png" alt="神の宿る、復活のシンボル">
+                                <div class="know-explain">
+                                    <h3>神の宿る、復活のシンボル</h3>
+                                    <p>
+                                        震災後には施設は完全閉鎖され、
+                                        復旧までは長い道のりがありました。
+                                        現在では計11.5面のフィールドを備え、
+                                        大会から合宿まで誰もが使用できる
+                                        一大スポーツ拠点となりました。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="border-area">
+                <img src="./images/common-title-line-rv.png" class="border">
+            </section>
+            <section class="product-area">
+                <h2>旅行プラン</h2>
+                <div class="product-list">
+                    <a href="https://www.hankyu-travel.com/tour/detail_d.php?p_course_id=25910&p_hei=10">
+                        <div class="product-detail">
+                            <img src="./images/products_1.png" class="pc" alt="product-img">
+                            <img src="./images/products_1.png" class="sp" alt="product-img">
+                            <div>
+                                <h3>福島第一原子力発電所 内部視察と福島県浜通り</h3>
+                                <h4>復興の軌跡をたどる 3日間</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="product-detail">
+                            <img src="./images/product1.png" class="pc" alt="product-img">
+                            <img src="./images/product1.png" class="sp" alt="product-img">
+                            <div>
+                                <h3>Coming soon</h3>
+                                <h4>随時商品を追加いたします</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="product-detail">
+                            <img src="./images/product1.png" class="pc" alt="product-img">
+                            <img src="./images/product1.png" class="sp" alt="product-img">
+                            <div>
+                                <h3>Coming soon</h3>
+                                <h4>随時商品を追加いたします</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="product-detail">
+                            <img src="./images/product1.png" class="pc" alt="product-img">
+                            <img src="./images/product1.png" class="sp" alt="product-img">
+                            <div>
+                                <h3>Coming soon</h3>
+                                <h4>随時商品を追加いたします</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="product-detail">
+                            <img src="./images/product1.png" class="pc" alt="product-img">
+                            <img src="./images/product1.png" class="sp" alt="product-img">
+                            <div>
+                                <h3>Coming soon</h3>
+                                <h4>随時商品を追加いたします</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="product-detail">
+                            <img src="./images/product1.png" class="pc" alt="product-img">
+                            <img src="./images/product1.png" class="sp" alt="product-img">
+                            <div>
+                                <h3>Coming soon</h3>
+                                <h4>随時商品を追加いたします</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="border-area">
+                <img src="./images/common-title-line-rv.png" class="border-rv" alt="border-line">
+            </section>
+            <section class="mail-area">
+                <h2>
+                    最新情報をメールにお届け<br>
+                </h2>
+                <p>WELCOME TO FUKUSHIMA</p>
+                <p>
+                    ホープツーリズム旅行パッケージは日々更新されております。最新のプラン情報を受け取るには、
+                    以下からメールアドレスでマガジンにご登録ください。
+                </p>
+                  <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd7OWjojazoED3mXjJJA8nyXceiWxLjaHCBvJ66QUSxPdp5VA/formResponse" method="POST"
+                    target="hidden_iframe"
+                    onsubmit="submitted=true;"
+                    class="c-form">
+                    <input type="email" class="whsOnd zHQkBf" jsname="YPqjbf" autocomplete="email" tabindex="0" aria-label="メールアドレス" required="" dir="auto" data-initial-dir="auto" data-initial-value="" name="entry.187268549" placeholder="メールアドレス">
+                    <input type="image" src="./images/mail-arrow.png" value="送信" class="send"/>
+                </form>
+
+                <!-- iframe with onload event to handle the form submission -->
+                <iframe
+                    name="hidden_iframe"
+                    id="hidden_iframe"
+                    style="display: none;"
+                    onload="if(submitted) { showThanksModal(); }"
+                ></iframe>
+
+
+                <!-- <div>
+                    <input type="text" placeholder="メールアドレスを入力">
+                    <a href="#"><img src="./images/mail-arrow.png" alt="mail-arrow"></a>
+                </div> -->
+    
+            </section>
+        </div>
+        <footer>
+            <div class="sns">
+                <p>SHARE</p>
+                <a href="https://twitter.com/fukushimatweet?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./images/logo-black.png" alt="x-logo"></a>
+                <a href="#"><img src="./images/fb-logo.png" alt="fb-logo"></a>
+                <a href="#"><img src="./images/line-logo.png" alt="line-logo"></a>
+            </div>
+            <div class="youtube">
+                <div>
+                    <p>
+                        <b>Hope Tourism ENJOY +</b><br>
+                        〜 福島を巡る旅 〜
+                    </p>
+                </div>
+                <a href="https://youtube.com/@user-gp2ei3yb1f?si=rAunLqYTLl2_59fq">
+                    <img src="./images/youtube-logo.png" alt="youtube-logo">
+                </a>
+            </div>
+            <div class="address">
+                <p>学びスポットへ旅にいこうホープツーリズム舞台は浜通り</p>
+                <div>
+                    <p>
+                        <b>公益財団法人 福島県観光物産交流協会</b><br class="sp">
+                        〒960-8053 福島県福島市三河南町1番20号（コラッセふくしま7階）
+                    </p>
+                    <a href="mailto:tabiiku@tif.ne.jp"><img src="./images/mail.png" alt="mail-logo">tabiiku@tif.ne.jp</a>
+                </div>
+                <small>&copy; Fukushima Prefecture.All Rights Reserved.</small>
+            </div>
+        </footer>
+    </main>
+    <!-- ポップアップの構造 -->
+    <div id="modal-bg"></div>
+    <div id="popup" class="popup">
+        <div class="popup-content" id="popup-content">
+            <span class="close-btn">&times;</span>
+            <iframe id="popup-iframe" src="" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+    <!-- モーダルのHTML -->
+<div id="thanksModal" class="modal">
+    <div class="modal-content">
+        <span class="thanks-close close-btn">&times;</span>
+        <div>
+            <h3>ご登録ありがとうございます。</h3>
+            <p>
+                随時更新情報をお送りさせていただきます。
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

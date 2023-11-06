@@ -39,7 +39,7 @@ function fadeInFromBelow(selector, duration, delayMultiplier) {
 }
 
 // a要素ごとのアニメーション
-fadeInFromBelow(".know-detail a", 1, 0.1);
+// fadeInFromBelow(".know-detail a", 1, 0.1);
 fadeInFromBelow(".product-list a", 0.7, 0.1);
 
 
@@ -148,3 +148,20 @@ function showThanksModal() {
       }
   }
 }
+$(document).ready(function () {
+  $(".know-detail").slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    slidesToShow: 3,
+    prevArrow: false, // 前への矢印を非表示にする
+    nextArrow: false, // 次への矢印を非表示にする
+    responsive: [{
+      breakpoint: 1023,
+           settings: {
+                slidesToShow: 1,
+           }
+      }
+ ]
+  });
+});
