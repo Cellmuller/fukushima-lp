@@ -139,6 +139,9 @@ p {
 .overview-area {
     text-align: center;
 }
+.overview-explain-sp {
+    display: none;
+}
 .overview-explain {
     display: flex;
     align-items: center;
@@ -626,6 +629,7 @@ form {
     }
     .know-detail a {
         min-height: 540px;
+        padding: 0 !important;
     }
     .about-detail {
         flex-direction: column;
@@ -646,18 +650,49 @@ form {
         width: 100%;
         border-radius: 25px;
     }
-    .overview-explain {
-        background-color: #fff;
+    .overview-explain-sp {
+        display: block;
         border-radius: 35px;
         padding: 65px 0;
         max-width: 445px;
         margin: auto;
     }
+    .overview-explain {
+        display: none;
+    }
+    .slick-initialized .slick-slide {
+        background-color: #fff;
+        margin: 0 10px;
+        padding: 10px;
+    }
+    .overview-cal > div {
+        padding: 5px !important;
+    }
+    .overview-cal div {
+        /* background-color: #fff; */
+        border-radius: 35px;
+        /* padding: 10px; */
+        /* margin: 0 20px; */
+        min-height: 484px;
+    }
+    #slick-slide12 > h3 > span, #slick-slide12 > p:nth-child(3) {
+        color: #f49659;
+    }
+    #slick-slide10 > h3 > span, #slick-slide10 > p:nth-child(3) {
+        color: #00adec;
+    }
+    #slick-slide11 > h3 > span, #slick-slide11 > p:nth-child(3) {
+        color: #8fc31f;
+    }
+    #slick-slide12 > p:nth-child(3), #slick-slide10 > p:nth-child(3) , #slick-slide11 > p:nth-child(3)  {
+        margin: 10px 0;
+    }
     .see, .listen, .brain {
         width: 100% !important;
     }
     .sp-img {
-        width: 90%;
+        display: block !important;
+        width: 100%;
         margin: auto;
     }
     .ovewview-img div {

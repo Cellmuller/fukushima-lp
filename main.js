@@ -52,35 +52,6 @@ window.addEventListener('DOMContentLoaded' , function(){
   document.getElementById('video-background').click();
 })
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   const popup = document.getElementById('popup');
-//   const popupContent = document.getElementById('popup-content'); // 追加
-//   const closeBtn = document.querySelector('.close-btn');
-//   const popupIframe = document.getElementById('popup-iframe');
-//   const boxes = document.querySelectorAll('.box');
-
-//   boxes.forEach(function(box) {
-//       box.addEventListener('click', function(event) {
-//           event.preventDefault();
-//           let articleURL = event.currentTarget.getAttribute('href');
-//           popupIframe.src = articleURL; 
-//           popup.style.display = 'block';
-//       });
-//   });
-
-//   closeBtn.addEventListener('click', closePopup);
-
-//   // popup-content の外側がクリックされた時のイベントハンドラを追加
-//   popup.addEventListener('click', function(event) {
-//       if (event.target === popup) {  // クリックされた要素が popup であればモーダルを閉じる
-//           closePopup();
-//       }
-//   });
-
-//   function closePopup() {
-//       popup.style.display = 'none';
-//   }
-// });
 document.addEventListener("DOMContentLoaded", function() {
   const popup = document.getElementById('popup');
   const closeBtn = document.querySelector('.close-btn');
@@ -163,5 +134,29 @@ $(document).ready(function () {
            }
       }
  ]
+  });
+});
+
+
+// $(document).ready(function () {
+//   $(".test").slick({
+//     autoplay: true,
+//     autoplaySpeed: 5000,
+//     dots: true,
+//     slidesToShow: 1,
+//     prevArrow: false, // 前への矢印を非表示にする
+//     nextArrow: false, // 次への矢印を非表示にする
+//   });
+// });
+
+
+$(document).ready(function () {
+  $(".overview-cal").slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    slidesToShow: 1,
+    prevArrow: false, // 前への矢印を非表示にする
+    nextArrow: false, // 次への矢印を非表示にす
   });
 });
