@@ -675,11 +675,29 @@ form {
         /* margin: 0 20px; */
         min-height: 501px;
     }
+    #slick-slide10 > h3 > span, .kore {
+        color: #00adec !important;
+        margin: 10px 0;
+    }
+    .color {
+        color: #00adec;
+    }
+    .color2 {
+        color: #8fc31f;
+    }
+    .color3 {
+        color: #f49659
+    }
+    .kore2 {
+        color: #8fc31f !important;
+        margin: 10px 0;
+    }
+    .kore3 {
+        color: #f49659 !important;
+        margin: 10px 0;
+    }
     #slick-slide12 > h3 > span, #slick-slide12 > p:nth-child(3) {
         color: #f49659;
-    }
-    #slick-slide10 > h3 > span, #slick-slide10 > p:nth-child(3) {
-        color: #00adec;
     }
     #slick-slide11 > h3 > span, #slick-slide11 > p:nth-child(3) {
         color: #8fc31f;
